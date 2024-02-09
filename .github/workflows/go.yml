@@ -18,7 +18,7 @@ jobs:
       run: go get -v -t -d ./...
 
     - name: Run golangci-lint
-      uses: golangci/golangci-lint-action@v3
+      uses: golangci/golangci-lint-action@v4
 
     - name: Run gofmt
       run: bash -c "test -z $(gofmt -s -l .)"
